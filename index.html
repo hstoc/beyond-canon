@@ -21,32 +21,48 @@
     h1 {
       text-align: center;
     }
-    .toc {
-      list-style-type: none;
+
+    table.toc {
       padding: 0;
       margin-right: 40px;
       margin-left: 20px;
+      border-collapse: collapse;
     }
-    .chapter {
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    td.chapter-number {
+      padding-right: .25em;
+      text-align: end;
+    }
+
+    td.chapter-title {
+      width: 100%;
+    }
+
+    td.page-link {
+      text-align: end;
+    }
+
+    td {
+      /* border-bottom: 1px solid gray; */
+      padding-top: 4px;
+      padding-bottom: 3px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    tr.chapter {
       font-family: "Courier New", "FreeMono", monospace;
       font-weight: bold;
       font-size: 1em;
       margin-bottom: 3px;
       margin-top: 3px;
-      display: flex;
     }
-    .chapter-number {
-      text-align: right;
-      flex-grow: 0;
-      width: 2em;
-      margin-right: 10px;
-    }
-    .chapter-title {
-      flex-grow: 1;
-    }
-    .page-link {
-      flex-grow: 0;
-    }
+    
     a {
       /* The default underline in Courier New is weirdly low which makes the list of links hard to look at */
       text-decoration: underline;
@@ -83,104 +99,96 @@
 <h2>2019&ndash;2020</h2>
 <p>
   <i>
-    HSBC chapters written by the original team. The titles are official (chosen by the team),
-    except Chapter 0, which is my name for the section before Chapter 1.
+    HSBC chapters written by the original team. The titles are official (chosen by the team).
   </i>
 </p>
-<ol class="toc">
-  <!--
-  It seems dumb to include the number as an element in every chapter.
-  However, it's the simplest way to include a number at all while the page numbers are right-aligned.
-  Furthermore, in some works, the chapter number can be something other than a number.
-  For example "Act 1" or "A1" or "Intermission 2" or "I2" or similar.
-  Probably this should really be a table, which is more semantically correct for this kind of data.
-  -->
-  <li class="chapter">
-    <span class="chapter-number">0.</span>
-    <span class="chapter-title">Somewhere, in the distant reaches of space...</span>
-    <a class="page-link" href="https://beyondcanon.com/story/1">1</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">1.</span>
-    <span class="chapter-title">Ghostflusters</span>
-    <a class="page-link" href="https://beyondcanon.com/story/33">33</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">2.</span>
-    <span class="chapter-title">Clown Logistics</span>
-    <a class="page-link" href="https://beyondcanon.com/story/57">57</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">3.</span>
-    <span class="chapter-title">How Are Your Feelings</span>
-    <a class="page-link" href="https://beyondcanon.com/story/96">96</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">4.</span>
-    <span class="chapter-title">The Contest</span>
-    <a class="page-link" href="https://beyondcanon.com/story/119">119</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">5.</span>
-    <span class="chapter-title">YOUR 3Y3S H4V3 B33N CLOS3D</span>
-    <a class="page-link" href="https://beyondcanon.com/story/144">144</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">6.</span>
-    <span class="chapter-title">A Conversation Regarding Relevance</span>
-    <a class="page-link" href="https://beyondcanon.com/story/145">145</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">7.</span>
-    <span class="chapter-title">Distress Call From the Closet</span>
-    <a class="page-link" href="https://beyondcanon.com/story/170">170</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">8.</span>
-    <span class="chapter-title">A Daughter Astray</span>
-    <a class="page-link" href="https://beyondcanon.com/story/192">192</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">9.</span>
-    <span class="chapter-title">How Goes The Eulogizing, Dear?</span>
-    <a class="page-link" href="https://beyondcanon.com/story/236">236</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">10.</span>
-    <span class="chapter-title">1 WOND3R WH4T TH3Y T4ST3 L1K3</span>
-    <a class="page-link" href="https://beyondcanon.com/story/263">263</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">11.</span>
-    <span class="chapter-title">History's Most Notorious Haters</span>
-    <a class="page-link" href="https://beyondcanon.com/story/277">277</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">12.</span>
-    <span class="chapter-title">Really Convoluted Metaphorical Horseshit</span>
-    <a class="page-link" href="https://beyondcanon.com/story/291">291</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">13.</span>
-    <span class="chapter-title">The Funeral</span>
-    <a class="page-link" href="https://beyondcanon.com/story/303">303</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">14.</span>
-    <span class="chapter-title">The Best Laid Plans</span>
-    <a class="page-link" href="https://beyondcanon.com/story/327">327</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">15.</span>
-    <span class="chapter-title">Ok So There&apos;s This Flower</span>
-    <a class="page-link" href="https://beyondcanon.com/story/376">376</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">16.</span>
-    <span class="chapter-title">Welcome to my Secret Lair</span>
-    <a class="page-link" href="https://beyondcanon.com/story/394">394</a>
-  </li>
-</ol>
+<table class="toc">
+  <tr class="chapter">
+    <td class="chapter-number">...</td>
+    <td class="chapter-title">Somewhere, in the distant reaches of space...</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/1">1</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">1.</td>
+    <td class="chapter-title">Ghostflusters</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/33">33</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">2.</td>
+    <td class="chapter-title">Clown Logistics</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/57">57</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">3.</td>
+    <td class="chapter-title">How Are Your Feelings</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/96">96</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">4.</td>
+    <td class="chapter-title">The Contest</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/119">119</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">5.</td>
+    <td class="chapter-title">YOUR 3Y3S H4V3 B33N CLOS3D</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/144">144</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">6.</td>
+    <td class="chapter-title">A Conversation Regarding Relevance</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/145">145</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">7.</td>
+    <td class="chapter-title">Distress Call From the Closet</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/170">170</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">8.</td>
+    <td class="chapter-title">A Daughter Astray</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/192">192</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">9.</td>
+    <td class="chapter-title">How Goes The Eulogizing, Dear?</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/236">236</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">10.</td>
+    <td class="chapter-title">1 WOND3R WH4T TH3Y T4ST3 L1K3</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/263">263</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">11.</td>
+    <td class="chapter-title">History&apos;s Most Notorious Haters</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/277">277</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">12.</td>
+    <td class="chapter-title">Really Convoluted Metaphorical Horseshit</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/291">291</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">13.</td>
+    <td class="chapter-title">The Funeral</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/303">303</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">14.</td>
+    <td class="chapter-title">The Best Laid Plans</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/327">327</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">15.</td>
+    <td class="chapter-title">Ok So There&apos;s This Flower</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/376">376</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">16.</td>
+    <td class="chapter-title">Welcome to my Secret Lair</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/394">394</a></td>
+  </tr>  
+</table>
 
 <hr>
 <h2>2023&ndash;Ongoing</h2>
@@ -204,93 +212,93 @@
   </i>
 </p>
 
-<ol class="toc">
-  <li class="chapter">
-    <span class="chapter-number">17.</span>
-    <span class="chapter-title">TH1S T1M3 1&apos;LL G3T 1T R1GHT</span>
-    <a href="https://beyondcanon.com/story/408">408</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">18.</span>
-    <span class="chapter-title">Re-Dead</span>
-    <a href="https://beyondcanon.com/story/441">441</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">19.</span>
-    <span class="chapter-title">I Was the Bitches?</span>
-    <a href="https://beyondcanon.com/story/443">443</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">20.</span>
-    <span class="chapter-title">The Arduous Task of Being a Vriska</span>
-    <a href="https://beyondcanon.com/story/455">455</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">21.</span>
-    <span class="chapter-title">We Don&apos;t Got Time for This Who Over</span>
-    <a href="https://beyondcanon.com/story/476">476</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">22.</span>
-    <span class="chapter-title">Everyone&apos;s Out of Character</span>
-    <a href="https://beyondcanon.com/story/486">486</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">23.</span>
-    <span class="chapter-title">Fathoming its Vast Vastness</span>
-    <a href="https://beyondcanon.com/story/497">497</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">24.</span>
-    <span class="chapter-title">It All Kinda Blurs Together</span>
-    <a href="https://beyondcanon.com/story/510">510</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">25.</span>
-    <span class="chapter-title">Methodically Cycling Through Neckwear</span>
-    <a href="https://beyondcanon.com/story/533">533</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">26.</span>
-    <span class="chapter-title">I Knew You Would Forgive Me</span>
-    <a href="https://beyondcanon.com/story/554">554</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">27.</span>
-    <span class="chapter-title">Majyyked to an Untimely Slumber</span>
-    <a href="https://beyondcanon.com/story/577">577</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">28.</span>
-    <span class="chapter-title">Getting the Baby's Room Ready</span>
-    <a href="https://beyondcanon.com/story/602">602</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">29.</span>
-    <span class="chapter-title">Bring in the Mothafuckin Lobsters</span>
-    <a href="https://beyondcanon.com/story/615">615</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">30.</span>
-    <span class="chapter-title">I Think I Can Let This One Go</span>
-    <a href="https://beyondcanon.com/story/626">626</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">31.</span>
-    <span class="chapter-title">My Narratively Significant Friend</span>
-    <a href="https://beyondcanon.com/story/638">638</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">32.</span>
-    <span class="chapter-title">Multichromatic Circus Freak Rejects</span>
-    <a href="https://beyondcanon.com/story/656">656</a>
-  </li>
-  <li class="chapter">
-    <span class="chapter-number">33.</span>
-    <span class="chapter-title">Hyperbolic Helltier Chamber</span>
-    <a href="https://beyondcanon.com/story/666">666</a>
-  </li>
-</ol>
+<table class="toc">
+  <tr class="chapter">
+    <td class="chapter-number">17.</td>
+    <td class="chapter-title">TH1S T1M3 1&apos;LL G3T 1T R1GHT</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/408">408</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">18.</td>
+    <td class="chapter-title">Re-Dead</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/441">441</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">19.</td>
+    <td class="chapter-title">I Was The Bitches?</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/443">443</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">20.</td>
+    <td class="chapter-title">The Arduous Task of Being a Vriska</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/455">455</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">21.</td>
+    <td class="chapter-title">We Don&apos;t Got Time for This Who Over</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/476">476</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">22.</td>
+    <td class="chapter-title">Everyone&apos;s Out of Character</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/486">486</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">23.</td>
+    <td class="chapter-title">Fathoming its Vast Vastness</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/497">497</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">24.</td>
+    <td class="chapter-title">It All Kinda Blurs Together</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/510">510</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">25.</td>
+    <td class="chapter-title">Methodically Cycling Through Neckwear</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/533">533</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">26.</td>
+    <td class="chapter-title">I Knew You Would Forgive Me</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/554">554</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">27.</td>
+    <td class="chapter-title">Majyyked To An Untimely Slumber</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/577">577</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">28.</td>
+    <td class="chapter-title">Getting The Baby&apos;s Room Ready</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/602">602</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">29.</td>
+    <td class="chapter-title">Bring in the Mothafuckin Lobsters</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/615">615</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">30.</td>
+    <td class="chapter-title">I Think I Can Let This One Go</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/626">626</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">31.</td>
+    <td class="chapter-title">My Narratively Significant Friend</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/638">638</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">32.</td>
+    <td class="chapter-title">Multichromatic Circus Freak Rejects</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/656">656</a></td>
+  </tr>
+  <tr class="chapter">
+    <td class="chapter-number">33.</td>
+    <td class="chapter-title">Hyperbolic Helltier Chamber</td>
+    <td class="page-link"><a href="https://beyondcanon.com/story/666">666</a></td>
+  </tr>  
+</table>
 </main>
 
 <hr>
