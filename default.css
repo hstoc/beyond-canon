@@ -1,0 +1,71 @@
+body {
+  background-color: lightgray;
+  font-family: "FreeSerif", serif;
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px 25px 25px;
+}
+
+h1,
+h2 {
+  font-family: "FreeSans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+table.toc {
+  padding: 0;
+  margin-right: 40px;
+  margin-left: 20px;
+  border-collapse: collapse;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+td.chapter-number {
+  padding-right: .25em;
+  text-align: end;
+}
+
+td.chapter-title {
+  width: 100%;
+}
+
+td.page-link {
+  text-align: end;
+}
+
+td {
+  /* border-bottom: 1px solid gray; */
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr.chapter {
+  font-family: "Courier New", "FreeMono", monospace;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+a {
+  /* The default underline in Courier New is weirdly low which makes the list of links hard to look at */
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+}
