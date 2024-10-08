@@ -66,3 +66,9 @@ a {
   text-decoration: underline;
   text-underline-offset: 1.5px;
 }
+
+.timeline {
+  height: 1.25em;
+  display: inline-block;
+  vertical-align: middle;
+}
