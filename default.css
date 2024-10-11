@@ -1,10 +1,12 @@
 body {
   background-color: lightgray;
-  font-family: "FreeSerif", serif;
+  font-family: "FreeSans", sans;
+  font-size: 14pt;
+  line-height: 1.25;
 }
 
 main {
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto;
   background-color: white;
   padding: 10px 25px 25px;
@@ -90,7 +92,7 @@ td.page-link {
 tr.chapter {
   font-family: "Courier New", "FreeMono", monospace;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-bottom: 3px;
   margin-top: 3px;
 }
