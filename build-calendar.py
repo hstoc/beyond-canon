@@ -206,9 +206,9 @@ def build_month(year, month):
 def month_to_html(year, month):
     weeks = build_month(year, month)
     html = '<table class="calendar">\n'
-    html += "<tr>\n"
+    #html += "<tr>\n"
     for week in weeks:
-        #html += "<tr>\n"
+        html += "<tr>\n"
         for day in week:
             if day is None:
                 html += "<td></td>\n"
@@ -222,8 +222,8 @@ def month_to_html(year, month):
                     icon = icon_names[event]
                     html += f'<img class="icon" src="{icon}" alt="{event}">'
                 html += '</td>\n'
-        #html += "</tr>\n"
-    html += "</tr>\n"
+        html += "</tr>\n"
+    #html += "</tr>\n"
     html += "</table>\n"
     return html
 
