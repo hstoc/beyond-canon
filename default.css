@@ -24,6 +24,40 @@ hr {
   margin-bottom: 20px;
 }
 
+table.calendar {
+  padding: 0;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.calendar td {
+  height: 44px;
+  font-size: 0.7em;
+  padding: 2px;
+  border: 1px solid gray;
+  vertical-align: top;
+}
+
+.calendar td:nth-child(6),
+.calendar th:nth-child(6) {
+  font-weight: bold;
+  border: 2px solid gray;
+}
+
+.calendar th {
+  border: 1px solid gray;
+}
+
+.calendar td:empty {
+  border: none;
+  background-color: white;
+}
+
 table.toc {
   padding: 0;
   margin-right: 40px;
@@ -31,7 +65,7 @@ table.toc {
   border-collapse: collapse;
 }
 
-td {
+.toc td {
   padding: 4px 6px 3px;
 }
 
@@ -49,7 +83,7 @@ td.page-link {
   text-align: end;
 }
 
-tr:nth-child(even) {
+.toc tr:nth-child(even) {
   background-color: #e0e0e0;
 }
 
@@ -67,8 +101,39 @@ a {
   text-underline-offset: 1.5px;
 }
 
-.timeline {
-  height: 1.25em;
+.icon {
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon-inline {
+  height: 25px;
   display: inline-block;
   vertical-align: middle;
+  padding-right: 5px;
+}
+
+.monthname::after {
+  content: " ";
+}
+
+.date::after {
+  content: "\A";
+  white-space: pre;
+}
+
+#icon-list ul {
+  list-style-type: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+#icon-list > li {
+  font-weight: bold;
+}
+
+#icon-list ul {
+  font-weight: normal;
 }
